@@ -1,0 +1,26 @@
+body{
+    background-color: #FF6F61;
+}
+.card{
+    width: 70%;
+    margin: auto;
+    padding: 2%;
+    color: white;
+    line-height: 1;
+    background-color: #2e3440;
+    border-radius: 10px;
+}
+.header{
+    font-size: 3em;
+    font-family: poppins;
+}
+pre{
+    margin-top: -3%;
+    font-family: rubik;
+}
+button{
+    background-color: #FF6F61;
+    border: none;
+    color: white;
+    padding: 1%;
+}
