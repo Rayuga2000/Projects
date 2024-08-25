@@ -1,9 +1,10 @@
 body{
-    background-color: #ED2939;
+    background-color: #FF6F61;
 }
 img{
     width: 20%;
-    border: 10px solid #17202a;
+    border-radius: 50%;
+    border: 10px solid blueviolet;
 }
 .image{
     display: contents;
@@ -14,7 +15,8 @@ img{
     padding: 2%;
     color: white;
     line-height: 1;
-    background-color: black;
+    background-color: #2e3440;
+    border-radius: 10px;
     transition: all 0.4s;
     box-shadow: 1px 1px 10px 5px  rgba(109, 56, 56, 0.705);
     /*box-shadow: rgb(36, 32, 32) 0px 4px 16px;*/
@@ -31,7 +33,7 @@ pre{
     font-family: rubik;
 }
 button{
-    background-color: #ED2939;
+    background-color: #FF6F61;
     border: none;
     color: white;
     padding: 1%;
