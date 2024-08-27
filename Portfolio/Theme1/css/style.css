@@ -1,31 +1,37 @@
 body{
     background-color: #ED2939;
 }
-img{
-    width: 20%;
-    border: 10px solid #17202a;
+#info{
+    padding: 0% 0% 2% 2%;
 }
-.image{
+img{
+    width: 35%;
+    /*border: 10px solid #17202a;*/
+}
+.image-div{
     display: contents;
 }
 .card{
     width: 70%;
     margin: 3% auto;
-    padding: 2%;
     color: white;
-    line-height: 1;
     background-color: black;
     transition: all 0.4s;
     box-shadow: 1px 1px 10px 5px  rgba(109, 56, 56, 0.705);
     /*box-shadow: rgb(36, 32, 32) 0px 4px 16px;*/
+}
+#info_card{
     display: flex;
     justify-content: space-between;
 }
-
 .header{
-    margin-top: -.5%;
+    margin-top: 5%; 
     font-size: 3em;
+    line-height: 1.3em;
     font-family: poppins;
+}
+#skills_header{
+    
 }
 pre{
     font-family: rubik;
@@ -34,7 +40,7 @@ button{
     background-color: #ED2939;
     border: none;
     color: white;
-    padding: 1%;
+    padding: 0.5em;
     font-size: large;
     font-family: poppins;
 }
