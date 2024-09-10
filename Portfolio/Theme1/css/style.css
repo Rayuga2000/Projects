@@ -5,6 +5,8 @@ body{
 }
 .card{
     width: 70%;
+    padding: 1rem;
+    box-sizing: border-box;
     margin: 3% auto;
     color: white;
     background-color: black;
@@ -15,11 +17,16 @@ body{
     font-size: 3em;
     font-family: poppins;
 }
-.image-div{
-    display: contents;
-}
 
+.image-div{
+    width: 45%;
+    background: url("../assets/asta.jpg") no-repeat center/cover; /* url repeat position/size */
+}
 /* Customize */
+#info_card{
+    padding: 0;
+    display: flex;
+}
 
 #info_card .header{
     margin-top: 5%;
@@ -38,7 +45,9 @@ button{
     font-family: poppins;
 }
 .image-div>img{
-    width: 35%;
+    max-width: 100%;
+    object-fit: contain;
+
     /*border: 10px solid #17202a;*/
 }
 #info_card{
@@ -49,9 +58,7 @@ button{
     padding: 0% 0% 2% 2%;
 }
 
-#skill_card{
-    padding: 1rem;
-}
+
 #skill_card .header,#projects_card .header{
     font-weight: normal;
     line-height: 0.1em;
