@@ -16,6 +16,8 @@ body{
 .header{ 
     font-size: 3em;
     font-family: poppins;
+    font-weight: normal;
+    line-height: 0.1em;
 }
 
 .image-div{
@@ -59,17 +61,12 @@ button{
 }
 
 
-#skill_card .header,#projects_card .header{
-    font-weight: normal;
-    line-height: 0.1em;
-}
-
 /*#skills{
     margin-top: 3%;
     display: grid;
     grid-auto-flow: column;
-    grid-template-rows: repeat(3,minmax(32px,1fr));
-    grid-template-columns: repeat(auto,minmax(32px,1fr));
+    grid-template-rows: repeat(3,minmax(10px,1fr));
+    grid-template-columns: repeat(auto,minmax(10px,1fr));
     align-content: space-evenly;
     justify-content: space-evenly;
 }*/
@@ -89,4 +86,34 @@ button{
 #skills p{
     text-align: center;
     font-family: SUSE;
+}
+
+@media screen and (max-width: 500px){
+    p,pre,h1{
+        text-wrap: wrap;
+    }
+
+    #skills{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(6,minmax(10px,1fr));
+        grid-template-columns: repeat(auto,minmax(10px,1fr));
+        align-content: space-between;
+        justify-content: space-evenly;
+    }
+
+    #contact_card{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #skills{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(12,minmax(10px,1fr));
+        grid-template-columns: repeat(auto,minmax(10px,1fr));
+    }
 }
