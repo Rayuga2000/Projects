@@ -1,4 +1,3 @@
-
 const html="/icons/html5.svg"
 const css="/icons/css3.svg"
 const js="/icons/js.svg"
@@ -15,10 +14,10 @@ const git="/icons/git_color.svg"
 function Skills(){
     return(
         <section>
-            <div id="skill_card" className="card">
+            <div className="card">
                 <h1 className="header">Skills</h1>
                 <hr />
-                <div id="skill_div">
+                <div className="skill_div">
                     <div>
                         <img src={html} />
                         <p>HTML5</p>

@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #ED2939;
+}
+pre{
+    font-family: rubik;
+}
+button{
+    background-color: #ED2939;
+    border: none;
+    color: white;
+    padding: 0.5em;
+    font-size: large;
+    font-family: poppins;
+}
+
+.card{
+    width: 70%;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 3% auto;
+    color: white;
+    background-color: black;
+    box-shadow: 1px 1px 10px 5px  rgba(109, 56, 56, 0.705);
+    &-intro{
+        @extend .card;
+        padding: 0;
+    }
+}
+
+.header{
+    font-size: 3em;
+    font-family: poppins;
+    font-weight: normal;
+    &-intro{
+        @extend .header;
+        line-height: 1.3em;
+        line-height-step: 2.3em;
+    }
+    
+}
+#profile-img{
+    width: 45%;
+    background: url("/public/asta.jpg") no-repeat center/cover; /* url repeat position/size */
+    img{
+        max-width: 100%;
+        object-fit: contain;
+    }
+}
+#intro{
+    padding: 2%;
+}
+.skill_div{
+    @apply flex flex-wrap justify-center items-center gap-4;
+    margin-top: 3%;
+    img{
+        width: 100%;
+    }
+    p{
+        text-align: center;
+        font-family: SUSE;
+    }
+    
+}

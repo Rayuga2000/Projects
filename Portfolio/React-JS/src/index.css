@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.skill_div{
+    @apply mt-3 flex flex-wrap justify-center items-center gap-4;
+    
+}
