@@ -43,13 +43,17 @@ button{
         @extend .header;
         line-height: 1.3em;
         line-height-step: 2.3em;
-    } 
+    }
+    &-contact{
+        @extend .header;
+        font-size: 4.5em;
+    }
 }
-#profile-img{
-    width: 45%;
+.profile-img{
+    width: 50%;
     background: url("/public/asta.jpg") no-repeat center/cover; /* url repeat position/size */
     img{
-        max-width: 100%;
+        max-width: 50%;
         object-fit: contain;
     }
 }
@@ -81,8 +85,36 @@ button{
         font-family: Nunito;
     }
 }
-.contact_card{
+.contact_form{
     img{
         width: 50%;
+    }
+}
+.contact_card_form{
+    label{
+        input{
+            border-radius: 0;
+        }
+        span{
+            font-family: 'Courier New', Courier, monospace;
+        }
+    }
+    label:last-of-type{
+        input{
+            height: 100px;
+        }
+        button{
+            img{
+                width: 20%;
+            }
+        }
+    }
+}
+
+.contact_card_body{
+    background: url("/public/wallpaper1.jpeg") no-repeat center/cover;
+    @apply p-4 flex flex-col items-center;
+    img{
+        width: 15%;
     }
 }
