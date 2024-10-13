@@ -10,6 +10,8 @@ const java="/icons/java.svg"
 const python="/icons/python.svg"
 const linux="/icons/linux.svg"
 const git="/icons/git_color.svg"
+const sass="/icons/sass.svg"
+const tailwind="/icons/tailwind-css.svg"
 
 function Skills(){
     return(
@@ -17,7 +19,7 @@ function Skills(){
             <div className="card">
                 <h1 className="header">Skills</h1>
                 <hr />
-                <div className="skill_div">
+                <div className="skill_div pb-3">
                     <div>
                         <img src={html} />
                         <p>HTML5</p>
@@ -65,6 +67,14 @@ function Skills(){
                     <div>
                         <img src={git} />
                         <p>Git</p>
+                    </div>
+                    <div>
+                        <img src={sass} />
+                        <p>Sass</p>
+                    </div>
+                    <div>
+                        <img src={tailwind} />
+                        <p>Tailwind</p>
                     </div>
                 </div>
             </div>

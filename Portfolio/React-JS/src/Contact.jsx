@@ -1,10 +1,12 @@
+import Form_daisyUI from "./Form_daisyUI"
+
 export default function Contact(){
     return(
         <section>
-            <div className="card" id="contact_card">
+            <div className="card">
                 <h1 className="header">Contact Me</h1>
                 <hr />
-                <div></div>
+                <Form_daisyUI />
             </div>
         </section>
     )

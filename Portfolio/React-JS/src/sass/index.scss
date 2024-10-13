@@ -2,11 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+//Protest Strike, Nunito, Space Grotesk, Pacifico (fonts)
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Protest+Strike&family=Space+Grotesk:wght@300..700&display=swap'); 
+
+
 body{
     background-color: #ED2939;
 }
-pre{
-    font-family: rubik;
+label{
+    margin-top: 0.5em;
 }
 button{
     background-color: #ED2939;
@@ -16,9 +20,9 @@ button{
     font-size: large;
     font-family: poppins;
 }
-
 .card{
-    width: 70%;
+    width: 75%;
+    border-radius: 0;
     padding: 1rem;
     box-sizing: border-box;
     margin: 3% auto;
@@ -39,8 +43,7 @@ button{
         @extend .header;
         line-height: 1.3em;
         line-height-step: 2.3em;
-    }
-    
+    } 
 }
 #profile-img{
     width: 45%;
@@ -52,16 +55,34 @@ button{
 }
 #intro{
     padding: 2%;
+    pre{
+        font-family: rubik;
+    }
+    
 }
 .skill_div{
     @apply flex flex-wrap justify-center items-center gap-4;
     margin-top: 3%;
-    img{
-        width: 100%;
-    }
+    
     p{
         text-align: center;
         font-family: SUSE;
     }
-    
+}
+
+.projects_card{
+    h3{
+        @extend .header;
+        @apply text-lime-300;
+        font-size: 2em;
+        font-family: "Space Grotesk";
+    }
+    p{
+        font-family: Nunito;
+    }
+}
+.contact_card{
+    img{
+        width: 50%;
+    }
 }
