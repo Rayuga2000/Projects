@@ -2,7 +2,7 @@
 export default function FormElement(){
     return(
         <div className="p-4 contact_card_form">
-            <label className="form-control max-w-xs">
+            <label className="form-control max-w-lg">
                 <div className="label">
                     <span className="label-text">What is your name?</span>
                 </div>

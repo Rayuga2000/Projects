@@ -44,10 +44,6 @@ button{
         line-height: 1.3em;
         line-height-step: 2.3em;
     }
-    &-contact{
-        @extend .header;
-        font-size: 4.5em;
-    }
 }
 .profile-img{
     width: 50%;
@@ -109,12 +105,30 @@ button{
             }
         }
     }
+    @media screen and (min-width: 600px){
+        &{
+            margin: auto;
+            input{
+                width: 100%;
+            }
+        }
+    }
 }
 
 .contact_card_body{
     background: url("/public/wallpaper1.jpeg") no-repeat center/cover;
     @apply p-4 flex flex-col items-center;
+    .header{
+        @extend .header;
+        font-size: 2.5em;
+        @media screen and (min-width: 560px){
+            &{
+                font-size: 4.5em;
+            }
+        }
+    }
     img{
-        width: 15%;
+        @apply size-9 sm:size-14 md:size-16;
     }
 }
+
