@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/BootStrap4/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/slick/slick.min.css">
+    <link rel="stylesheet" href="assets/slick/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" media="all" href="assets/css/style.css">
+
+    <title>Shoppers Stop</title>
+</head>
+<body>
+    <!--Header Start-->
+    <section class="sticky-top">
+        <div id="header" class="row">
+            <div class="col-md-5">
+                <div class="header-left my-3">
+                    <i>
+                        <img src="assets/img/iconallstore.png">
+                    </i>
+                    <a href="#" class="mr-2">All Stores</a>
+                    <i>
+                        <img src="assets/img/iconcontactus.png">
+                    </i>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="header-logo">
+                    <a href="#">
+                        <img src="assets/img/sslogo.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="header-right d-flex">
+                    <div class="search-bar">
+                        <form>
+                            <div class="input-group border-bottom">
+                              <input type="search" class="form-control border-0" placeholder="Search Products & Brands">
+                              <div id="search-icon" class="input-group-append">
+                                <span>
+                                    <a href="#"><img src="assets/img/iconsearch.png"></a>
+                                </span>
+                              </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="user-icons">
+                        <a href="#" id="wish">
+                            <img src="assets/img/iconwishlist.png">
+                        </a>
+                        <div id="wishpop">
+                            <p><strong>Your Saved Items Are Empty</strong></p>
+                            <hr>
+                            <p>
+                                Please <a href="#">LOGIN</a> or <a href="#">REGISTER</a> to add products
+                            </p>
+                        </div>
+                        <a href="#">
+                            <img src="assets/img/iconaddtobag.png"> 
+                        </a>
+                        <a id="user" href="#">
+                            <img src="assets/img/iconuser.png">
+                        </a>
+                        <div id="userpop">
+                            <p>SIGN IN</p>
+                            <hr>
+                            <p>SIGN UP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Header End-->
+
+    <!--Navbar Start-->
+    <section>
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colnav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="colnav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">BARGAINS</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Women</a>
+                                    <a class="dropdown-item" href="#">Men</a>
+                                    <a class="dropdown-item" href="#">Kids</a>
+                                    <a class="dropdown-item" href="#">Beauty</a>
+                                    <a class="dropdown-item" href="#">Home Offers</a>
+                                    <a class="dropdown-item" href="#">Other Offers</a>
+                                    <a class="dropdown-item" href="#">All Offer Products</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">WOMEN</a>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">Indian Wear</a>
+                                  <a class="dropdown-item" href="#">Western Wear</a>
+                                  <a class="dropdown-item" href="#">Lingerie & Night Wear</a>
+                                  <a class="dropdown-item" href="#">Footwear</a>
+                                  <a class="dropdown-item" href="#">Women's Fragrances</a>
+                                  <a class="dropdown-item" href="#">Bags & Wallets</a>
+                                  <a class="dropdown-item" href="#">Watches</a>
+                                  <a class="dropdown-item" href="#">Sunglasses & Frames</a>
+                                  <a class="dropdown-item" href="#">Jewellery</a>
+                                  <a class="dropdown-item" href="#">Travel</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">KIDS</a>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Boys</a>
+                                <a class="dropdown-item" href="#">Girls</a>
+                                <a class="dropdown-item" href="#">Infants</a>
+                                <a class="dropdown-item" href="#">Toys</a>
+                                <a class="dropdown-item" href="#">School Essentials</a>
+                                <a class="dropdown-item" href="#">Footware</a>
+                                <a class="dropdown-item" href="#">Watches</a>
+                                <a class="dropdown-item" href="#">Accessories</a>
+                                <a class="dropdown-item" href="#">KIDS</a>
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">BEAUTY</a>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Makeup</a>
+                                <a class="dropdown-item" href="#">Skincare</a>
+                                <a class="dropdown-item" href="#">Bath & Body</a>
+                                <a class="dropdown-item" href="#">Nails</a>
+                                <a class="dropdown-item" href="#">Haircare</a>
+                                <a class="dropdown-item" href="#">Tools & Accessories</a>
+                                <a class="dropdown-item" href="#">Women's Fragrances</a>
+                                <a class="dropdown-item" href="#">Men's Fragrances</a>
+                                <a class="dropdown-item" href="#">Grooming for Men</a>
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">MEN</a>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Clothing</a>
+                                <a class="dropdown-item" href="#">Accessories</a>
+                                <a class="dropdown-item" href="#">Footware</a>
+                                <a class="dropdown-item" href="#">Sunglasses & Frames</a>
+                                <a class="dropdown-item" href="#">Watches</a>                            
+                                <a class="dropdown-item" href="#">Men's Fragrances</a>
+                                <a class="dropdown-item" href="#">Grooming for Men</a>
+                                <a class="dropdown-item" href="#">Jewellery</a>
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">HOMESTOP</a>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Kitchen & Dining</a>
+                                <a class="dropdown-item" href="#">Decor</a>
+                                <a class="dropdown-item" href="#">Home Furnishing</a>
+                                <a class="dropdown-item" href="#">Storage & Organization</a>
+                                <a class="dropdown-item" href="#">Smart Home and Appliances</a>                            
+                                <a class="dropdown-item" href="#">Bath</a>
+                                <a class="dropdown-item" href="#">Bedding</a>
+                                <a class="dropdown-item" href="#">Furniture</a>
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">CROSSWORD</a>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Book</a>
+                                <a class="dropdown-item" href="#">Electronics</a>
+                                <a class="dropdown-item" href="#">Stationery</a>
+                                <a class="dropdown-item" href="#">Toys</a>
+                                <a class="dropdown-item" href="#">School Essentials</a>
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">BRANDS</a>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Brands of Shopper's Stop</a>
+                                <a class="dropdown-item" href="#">Luxury Brands</a>
+                                <a class="dropdown-item" href="#">Trending Brands</a>
+                                <a class="dropdown-item" href="#">Featured Brands</a>
+                                <a class="dropdown-item" href="#">Celeb Brands</a>
+                                <a class="dropdown-item" href="#">Just Launched Brands</a>
+                                <a class="dropdown-item" href="#">All Brands</a>
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">GIFTS</a>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Gifts for Her</a>
+                                <a class="dropdown-item" href="#">Gifts for Him</a>
+                                <a class="dropdown-item" href="#">Instant Gifting</a>
+                                <a class="dropdown-item" href="#">House Warming Gifts</a>
+                                <a class="dropdown-item" href="#">Wedding Gifts</a>
+                                <a class="dropdown-item" href="#">Luxury Gifting</a>
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">DISCOVER</a>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">First Citizen</a>
+                                <a class="dropdown-item" href="#">Style Hub</a>
+                                <a class="dropdown-item" href="#">Buying Guide</a>
+                                <a class="dropdown-item" href="#">Personal Shopper Service</a>
+                                <a class="dropdown-item" href="#">Express Store Pickup</a>
+                              </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!--Navbar End-->
+
+    <!--Enroll Now Start-->
+    <section>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#"><img src="assets/img/FC-Strip-Web.jpg"></a>
+            </div>
+        </div>
+    </section>
+    <!--Enroll Now End-->
+
+    <!--Main slider start-->
+    <section>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="top-slider">
+                    <div>
+                        <a href="#">
+                            <img src="assets/img/Home-Page-Main-Carousals-Family-Web.jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="assets/img/Home-Page-Main-Carousals-Mens-Tshirt-Web.jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="assets/img/Home-Page-Main-Carousals-Dresses-Web.jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="assets/img/Home-Page-Main-Carousals-Watches-Web.jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="assets/img/Home-Page-Main-Carousals-Kitchen-Appliances-Web.jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="assets/img/Home-Page-Main-Carousals-Topwear-Web.jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="assets/img/Home-Page-Main-Carousals-Footwear-Web.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Main slider end-->
+
+    <!--Flash Sales start-->
+    <section>
+        <div class="row">
+            <div class="col-md-12"><img src="assets/img/Flash-Sales-Strip-Web.jpg"></div>
+        </div>
+    </section>
+    <!--Flash Sales end-->
+
+    <!--Men's/Women's Wear start-->
+    <section>
+        <div class="row">
+            <div class="col-md-12">
+                <img src="assets/img/mensWomenswear-mltClk_web.jpg" class="my-1">
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+        </div>
+    </section>
+    <!--Men's/Women's Wear end-->
+
+    <!--slider2 start-->
+    <section>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="slider2">
+                    <div>
+                        <a href="#">
+                            <img src="assets/img/skincare_web.jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="assets/img/arcelia_web.jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="assets/img/arceliaAccessories_web.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--slider2 end-->
+
+    <!--Special Offers start-->
+    <section>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#"><img src="assets/img/special-offers----strip--WEB--.jpg"></a>
+            </div>
+        </div>
+    </section>
+    <!--Special Offers end-->
+
+    <!--Lakme start-->
+    <section>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#"><img src="assets/img/Lakme-Crousal---001-.jpg" class="my-1"></a>
+            </div>
+        </div>
+    </section>
+    <!--lakeme end-->
+
+    <!--fragrance start-->
+    <section>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#"><img src="assets/img/frgranceHim&her_mltClck_web.jpg"></a>
+            </div>
+        </div>
+    </section>
+    <!--fragrance end-->
+
+    <!--Homestop Category start-->
+    <section class="p-4" style="background-color: #EAEAEA;">
+        <div class="row mb-3">
+            <div class="col-md-12"><h2 style="font-weight: bolder;">Homestop Category</h2></div>
+        </div>
+        <div class="row">
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Cookware--web-20210819.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Appliances------web-20210819.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Cups-&-Mugs----web-20210819.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Decor---Figurines-&-Idols-+-Fountains--02----web-20210819.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Cushions-&-Covers----web-20210819.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Towels------web-20210819.jpg"></a>
+            </div>
+        </div>
+    </section>
+    <!--Homestop Category end-->
+    
+    <!--Kids start-->
+    <section>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#"><img src="assets/img/Homepage-Kids-LP-Static-Web.jpg"></a>
+            </div>
+        </div>
+    </section>
+    <!--Kids end-->
+
+    <!--Kid's Fashion start-->
+    <section class="px-3 my-5">
+        <div class="row">
+            <div class="col-md-12"><h2>Kid's Fashion</h2></div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-4 px-5 py-5">
+                <a href="#"><img src="assets/img/Home-Page-Kid's-Fashion-3x3-Widgets-Watches.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-5">
+                <a href="#"><img src="assets/img/Home-Page-Kid's-Fashion-3x3-Widgets-Dresses.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-5">
+                <a href="#"><img src="assets/img/Home-Page-Kid's-Fashion-3x3-Widgets-Boys-Bottomwear.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-5">
+                <a href="#"><img src="assets/img/Home-Page-Kid's-Fashion-3x3-Widgets-Infantwear.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-5">
+                <a href="#"><img src="assets/img/Home-Page-Kid's-Fashion-3x3-Widgets-Toys.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-5">
+                <a href="#"><img src="assets/img/Home-Page-Kid's-Fashion-3x3-Widgets-Footwear.jpg"></a>
+            </div>
+        </div>
+    </section>
+    <!--Kid's Fashion end-->
+
+    <!--Bestselling Categories For Home start-->
+    <section class="p-4" style="background-color: #EAEAEA;">
+        <div class="row mb-3">
+            <div class="col-md-12"><h2 style="font-weight: bolder;">Bestselling Categories For Home</h2></div>
+        </div>
+        <div class="row">
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Home-Page-Bestselling-Home-Categories-6-Widgets-Cookware.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Home-Page-Bestselling-Home-Categories-6-Widgets-Appliances.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Home-Page-Bestselling-Home-Categories-6-Widgets-Decor.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Home-Page-Bestselling-Home-Categories-6-Widgets-Dinner-Sets.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Home-Page-Bestselling-Home-Categories-6-Widgets-Cushion-Covers.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Home-Page-Bestselling-Home-Categories-6-Widgets-Towels.jpg"></a>
+            </div>
+        </div>
+    </section>
+    <!--Bestselling Categories For Home end-->
+
+    <!--Featured Categories start-->
+    <section class="px-3 my-5">
+        <div class="row my-0">
+            <div class="col-md-12"><h2 class="mb-3">Featured Categories</h2></div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-4 px-5 py-4">
+                <a href="#"><img src="assets/img/Men-Shirts-------WEB.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-4">
+                <a href="#"><img src="assets/img/Women-Dresses------WEB.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-4">
+                <a href="#"><img src="assets/img/Skincare------WEB208.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-4">
+                <a href="#"><img src="assets/img/Jewellery-----WEB208.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-4">
+                <a href="#"><img src="assets/img/Handbags----WEB208.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-4">
+                <a href="#"><img src="assets/img/Dining------WEB208.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-4">
+                <a href="#"><img src="assets/img/MEN-208JEANS--------WEB.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-4">
+                <a href="#"><img src="assets/img/IndianWear-Sets-------WEB208.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-4">
+                <a href="#"><img src="assets/img/Body-Lotions-------WEB208.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-4">
+                <a href="#"><img src="assets/img/Curtains------WEB208.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-4">
+                <a href="#"><img src="assets/img/Sunglasses--------WEB208.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-4">
+                <a href="#"><img src="assets/img/Womens-Footwear--------WEb208.jpg"></a>
+            </div>
+        </div>
+    </section>
+    <!--Featured Categories start-->
+    
+    <!--Handbags start-->
+    <section class="p-4" style="background-color: #EAEAEA;">
+        <div class="row">
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Elliza-Donatein-------WEB-04-.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Allen-Solly-----WEB-.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Hidesign-------WEB-.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Lino-Perros------WEB-.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Giordano------WEB-.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Tommy-Hilfiger-----WEB-.jpg"></a>
+            </div>
+        </div>
+    </section>
+    <!--Handbags end-->
+
+    <!--Top Brands For Men start-->
+    <section class="px-3">
+        <div class="row">
+            <div class="col-md-12"><h2 class="mb-3">Top Brands For Men</h2></div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-4 px-5 py-4">
+                <a href="#"><img src="assets/img/Tommy-Hilfger-&-CK-----web-01.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-4">
+                <a href="#"><img src="assets/img/guess----web-01.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-4">
+                <a href="#"><img src="assets/img/Stop-&-Life--------web-01.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-4">
+                <a href="#"><img src="assets/img/Lee-Cooper------web-01.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-4">
+                <a href="#"><img src="assets/img/Men-Grooming-----web-01.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-4">
+                <a href="#"><img src="assets/img/Men-Fragrances-------web-01.jpg"></a>
+            </div>
+        </div>
+    </section>
+    <!--Top Brands For Men end-->
+
+    <!--Top Brands For Women start-->
+    <section class="px-3">
+        <div class="row">
+            <div class="col-md-12"><h2 class="mb-3 mt-5">Top Brands For Women</h2></div>
+        </div>
+        <div class="row px-3">
+            <div class="col-6 col-md-4 px-5 py-4">
+                <a href="#"><img src="assets/img/Juniper-&-Varanga----web-01208.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-4">
+                <a href="#"><img src="assets/img/STOP-&-LIFE-----web-010820.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-4">
+                <a href="#"><img src="assets/img/Titan-----web-010820.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-4">
+                <a href="#"><img src="assets/img/Lipsticks------web-01.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-4">
+                <a href="#"><img src="assets/img/Handbags------web-010820.jpg"></a>
+            </div>
+            <div class="col-6 col-md-4 px-5 py-4">
+                <a href="#"><img src="assets/img/Fragrances----web-012098.jpg"></a>
+            </div>
+        </div>
+    </section>
+    <!--Top Brands For Women end-->
+
+    <!--Home Top Brands start-->
+    <section class="p-4" style="background-color: #EAEAEA;">
+        <div class="row mb-3">
+            <div class="col-md-12"><h2 style="font-weight: bolder;">Home Top Brands</h2></div>
+        </div>
+        <div class="row">
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Home-Page-Home-Top-Brands-6-Widgets-Wonderchef.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Home-Page-Home-Top-Brands-6-Widgets-Meyer.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Home-Page-Home-Top-Brands-6-Widgets-Spaces.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Home-Page-Home-Top-Brands-6-Widgets-Back-To-Earth.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Home-Page-Home-Top-Brands-6-Widgets-Fern-Treasures.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Home-Page-Home-Top-Brands-6-Widgets-IVY.jpg"></a>
+            </div>
+        </div>
+    </section>
+    <!--Home Top Brands end-->
+
+    <!--Brand of the Day start-->
+    <section>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#"><img src="assets/img/home-page-----Brand-of-the-day-----strip--WEB-----.jpg"></a>
+            </div>
+        </div>
+    </section>
+    <!--Brand of the Day end-->
+
+    <!--slider3 start-->
+    <section>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="slider3">
+                    <div>
+                        <a href="#">
+                            <img src="assets/img/Guess-Brand-Day-Static-Web.jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="assets/img/FERN-----Crousals--web.jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="assets/img/CK-Brand-Day-Static-Web.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--slider3 end-->
+
+    <!--Deals you can't Miss start-->
+    <section class="px-3 my-5">
+        <div class="row">
+            <div class="col-md-12"><h2 style="font-weight: bolder;">Deals you can't Miss</h2></div>
+        </div>
+        <div class="row px-3">
+            <div class="col-4 col-md-2 px-3 py-4">
+                <a href="#"><img src="assets/img/Home-Page-Deal-You-Can't-Miss-6-Widgets-Fossil.jpg"></a>
+            </div>
+            <div class="col-4 col-md-2 px-3 py-4">
+                <a href="#"><img src="assets/img/Home-Page-Deal-You-Can't-Miss-6-Widgets-Tommy.jpg"></a>
+            </div>
+            <div class="col-4 col-md-2 px-3 py-4">
+                <a href="#"><img src="assets/img/Home-Page-Deal-You-Can't-Miss-6-Widgets-Swarovski.jpg"></a>
+            </div>
+            <div class="col-4 col-md-2 px-3 py-4">
+                <a href="#"><img src="assets/img/Home-Page-Deal-You-Can't-Miss-6-Widgets-Allen-Solly-22.jpg"></a>
+            </div>
+            <div class="col-4 col-md-2 px-3 py-4">
+                <a href="#"><img src="assets/img/Home-Page-Deal-You-Can't-Miss-6-Widgets-Catwalk.jpg"></a>
+            </div>
+            <div class="col-4 col-md-2 px-3 py-4">
+                <a href="#"><img src="assets/img/Home-Page-Deal-You-Can't-Miss-6-Widgets-Puma.jpg"></a>
+            </div>
+            <div class="col-4 col-md-2 px-3 py-4">
+                <a href="#"><img src="assets/img/Home-Page-Deal-You-Can't-Miss-6-Widgets-CK-JEANS.jpg"></a>
+            </div>
+            <div class="col-4 col-md-2 px-3 py-4">
+                <a href="#"><img src="assets/img/Home-Page-Deal-You-Can't-Miss-6-Widgets-Ruff (1).jpg"></a>
+            </div>
+            <div class="col-4 col-md-2 px-3 py-4">
+                <a href="#"><img src="assets/img/Home-Page-Deal-You-Can't-Miss-6-Widgets-Maybelline.jpg"></a>
+            </div>
+            <div class="col-4 col-md-2 px-3 py-4">
+                <a href="#"><img src="assets/img/Home-Page-Deal-You-Can't-Miss-6-Widgets-W.jpg"></a>
+            </div>
+            <div class="col-4 col-md-2 px-3 py-4">
+                <a href="#"><img src="assets/img/Home-Page-Deal-You-Can't-Miss-6-Widgets-Maspar-.jpg"></a>
+            </div>
+            <div class="col-4 col-md-2 px-3 py-4">
+                <a href="#"><img src="assets/img/Home-Page-Deal-You-Can't-Miss-6-Widgets-Estatos.jpg"></a>
+            </div>
+            <div class="col-4 col-md-2 px-3 py-4">
+                <a href="#"><img src="assets/img/Home-Page-Deal-You-Can't-Miss-6-Widgets-Allen-Solly-Mens.jpg"></a>
+            </div>
+            <div class="col-4 col-md-2 px-3 py-4">
+                <a href="#"><img src="assets/img/Home-Page-Deal-You-Can't-Miss-6-Widgets-Fastrack.jpg"></a>
+            </div>
+            <div class="col-4 col-md-2 px-3 py-4">
+                <a href="#"><img src="assets/img/Home-Page-Deal-You-Can't-Miss-6-Widgets-Pepperment.jpg"></a>
+            </div>
+            <div class="col-4 col-md-2 px-3 py-4">
+                <a href="#"><img src="assets/img/Home-Page-Deal-You-Can't-Miss-6-Widgets-Nayomi.jpg"></a>
+            </div>
+            <div class="col-4 col-md-2 px-3 py-4">
+                <a href="#"><img src="assets/img/Home-Page-Deal-You-Can't-Miss-6-Widgets-Hideign.jpg"></a>
+            </div>
+            <div class="col-4 col-md-2 px-3 py-4">
+                <a href="#"><img src="assets/img/Home-Page-Deal-You-Can't-Miss-6-Widgets-Colorbar.jpg"></a>
+            </div>
+        </div>
+    </section>
+    <!--Deals you can't Miss end-->
+
+    <!--Kid's Favourite Brands start-->
+    <section class="p-4" style="background-color: #CFE8EB;">
+        <div class="row mb-3">
+            <div class="col-md-12"><h2 style="font-weight: bolder;">Kid's Favourite Brands</h2></div>
+        </div>
+        <div class="row">
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Home-Page-Kid's-Favourite-Brands-6-Widgets-Allen-Solly.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Home-Page-Kid's-Favourite-Brands-6-Widgets-Gini-&-Jony.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Home-Page-Kid's-Favourite-Brands-6-Widgets-Life.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Home-Page-Kid's-Favourite-Brands-6-Widgets-Mothercare.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Home-Page-Kid's-Favourite-Brands-6-Widgets-Karrot.jpg"></a>
+            </div>
+            <div class="col-4 col-md">
+                <a href="#"><img src="assets/img/Home-Page-Kid's-Favourite-Brands-6-Widgets-Zoop.jpg"></a>
+            </div>
+        </div>
+    </section>
+    <!--Kid's Favourite Brands end-->
+
+    <!--Top Selling Brands start-->
+    <section>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#"><img src="assets/img/Top-selling-brands-Strip-Web.jpg"></a>
+            </div>
+        </div>
+    </section>
+    <!--Top Selling Brands start-->
+
+    <!--bottom-slider start-->
+    <section>
+        <div class="row">
+            <div class="col-md-12">
+               <div class="bottom-slider">
+                   <div>
+                       <a href="#">
+                           <img src="assets/img/PVT-Brands-Static-Mens-Wear-Web.jpg">
+                       </a>
+                   </div>
+                   <div>
+                       <a href="#">
+                           <img src="assets/img/PVT-Brands-Static-Western-Wear-Web.jpg">
+                       </a>
+                   </div>
+                   <div>
+                       <a href="#">
+                           <img src="assets/img/Elliza-Donatein-Static-Web.jpg">
+                       </a>
+                   </div>
+               </div> 
+            </div>
+        </div>
+    </section>
+    <!--bottom-slider end-->
+    
+    <!--Seal Hot Deals start-->
+    <section class="my-4">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#"><img src="assets/img/EOSS-Strip-Web.jpg"></a>
+            </div>
+        </div>
+    </section>
+    <!--Seal Hot Deals end-->
+
+    <!--Gift with love start-->
+    <section class="my-4">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#"><img src="assets/img/giftWithLove_web.jpg"></a>
+            </div>
+        </div>
+    </section>
+    <!--Gift with love end-->
+
+    <!--Seal Hot Deals start-->
+    <section class="my-4">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#"><img src="assets/img/EOSS-Strip-Web.jpg"></a>
+            </div>
+        </div>
+    </section>
+    <!--Seal Hot Deals start-->
+
+    <!--Covid start-->
+    <section>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#"><img src="assets/img/Covid-Strip.jpg"></a>
+            </div>
+        </div>
+    </section>
+    <!--Covid end-->
+
+    <!--Footer start-->
+    <section>
+        <div class="row">
+            <div class="col-md-12">
+                <footer>
+                    <div class="footer-container">
+                        <div class="footer-top p-5">
+                            <div class="row">
+                                <div class="col-md-4 col-12 download">
+                                    <strong>DOWNLOAD THE APP ON</strong>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/img/pngegg.png">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/img/pngegg (1).png">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-4 pt-0 delivery">
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <a href="#">
+                                                    <img src="assets/img/100-percent.png">
+                                                </a>
+                                            </div>
+                                            <div>Authentic Products</div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <a href="#">
+                                                    <img src="assets/img/express-delivery.png">
+                                                </a>
+                                            </div>
+                                            <div>Free Delivery*</div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <a href="#">
+                                                    <img src="assets/img/blockchain.png">
+                                                </a>
+                                            </div>
+                                            <div>Easy Exchange and Return</div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <a href="#">
+                                                    <img src="assets/img/express.png">
+                                                </a>
+                                            </div>
+                                            <div>Express Store Pickup</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 col-12 pt-md-0 pt-3 follow">
+                                    <strong>FOLLOW US</strong>
+                                    <ul>
+                                        <li><a href="#"><img src="assets/img/facebook-app-symbol.png"></a></li>
+                                        <li><a href="#"><img src="assets/img/twitter.png"></a></li>
+                                        <li><a href="#"><img src="assets/img/instagram.png"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="footer-bottom">
+                            <div class="row w-75 mx-auto py-5">
+                                <div class="col-md-2 col-12">
+                                    <h5>CUSTOMER</h5>
+                                    <ul>
+                                        <li><a href="#">HELP/FAQS</a></li>
+                                        <li><a href="#">TRACK ORDER</a></li>
+                                        <li><a href="#">SIZE GUIDE</a></li>
+                                        <li><a href="#">BUYING GUIDE</a></li>
+                                        <li><a href="#">HOW DO I SHOP?</a></li>
+                                        <li><a href="#">HOW DO I PAY?</a></li>
+                                        <li><a href="#">FIND PLACES WE DELIVER</a></li>
+                                        <li><a href="#">STYLE HUB</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-2 col-12">
+                                    <h5>POLICIES</h5>
+                                    <ul>
+                                        <li><a href="#">TERMS OF USE</a></li>
+                                        <li><a href="#">PRIVACY</a></li>
+                                        <li><a href="#">DELIVERY POLICY</a></li>
+                                        <li><a href="#">EXCHANGES & RETURNS</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-2 col-12">
+                                    <h5>STORE AND SITES</h5>
+                                    <ul>
+                                        <li><a href="#">ABOUT US</a></li>
+                                        <li><a href="#">CONTACT US</a></li>
+                                        <li><a href="#">CORPORATE SITE</a></li>
+                                        <li><a href="#">STORE LOCATOR</a></li>
+                                        <li><a href="#">CAREERS</a></li>
+                                        <li><a href="#">SITEMAP</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-2 col-12">
+                                    <h5>DELIGHTFUL PROGRAMS</h5>
+                                    <ul>
+                                        <li><a href="#">INSTANT GIFTING</a></li>
+                                        <li><a href="#">EXPRESS STORE PICK UP</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-2 col-12">
+                                    <h5>FIRST CITIZEN</h5>
+                                    <ul>
+                                        <li><a href="#">FIRST CITIZEN</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-2 col-12">
+                                    <h5>REACH US</h5>
+                                    <ul>
+                                        <li>FOR ANY QUERY PLEASE EMAIL US</li>
+                                        <li><a href="#"><u>customercare@shoppersstop.com</u></a></li>
+                                    </ul>
+                                    <div class="brand-select">
+                                        <select name="brands" id="brands">
+                                            <option selected disabled>BRANDS</option>
+                                            <option>109F</option>
+                                            <option>3M</option>
+                                            <option>612 LEAGUE</option>
+                                            <option>ADARA</option>
+                                            <option>ADDON</option>
+                                            <option>ALEX TOYS</option>
+                                            <option>ADIRA</option>
+                                            <option>ADIDAS</option>
+                                            <option>ALTLIFE</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </section>
+    <!--Footer end-->
+
+    <script src="assets/jQuery/jquery-3.6.0.js"></script>
+    <script src="assets/BootStrap4/popper.min.js"></script>
+    <script src="assets/slick/slick.min.js"></script>
+    <script src="assets/BootStrap4/bootstrap.min.js"></script>
+    <script src="assets/BootStrap4/bootstrap.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

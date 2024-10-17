@@ -1,0 +1,182 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: hsl(0, 0%, 98%);
+    min-width: 1300px;
+}
+/*#f2eaec*/
+a:link,a:visited{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: lightblue;
+}
+.logo{
+    width: 200px;
+}
+.header ul ul a:link,.header ul ul a:visited{
+    color: black;
+}
+.header{
+    padding: 10px;
+    background-color: #222831;
+    height: 55px;
+    display: flex;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.header ul{
+    display: inline-flex;
+    list-style-type: none;
+    position: relative;
+    padding: 5px;
+    margin: auto;
+    margin-right: 20px;
+}
+.header p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+.header ul ul{
+    display: none;
+    position: absolute;
+}
+.header ul ul li{
+    width: 100px;
+    background-color: white;
+    text-align: right;
+    padding: 10px;
+    box-shadow: -5px 5px 25px -4px rgba(30,30,60,0.25);
+    cursor: pointer;
+}
+.header ul ul li:hover{
+    border: none;
+    border-right: 3px solid red;
+}
+.header ul li:hover ul{
+    display: block;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 10px;
+    height: auto;
+    margin-top: 4.5%;
+}
+.sidebar{
+    width: 15%;
+    height: 350px;
+    padding: 20px;
+    background-color: white;
+    font-family: Oswald;
+    box-shadow: 0px 2px 25px -4px rgba(30,30,60,0.25);
+}
+.sidebar h1{
+    font-family: Ubuntu;
+    font-size: 30px;
+}
+select:focus{
+    outline: none;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    float: right;
+}
+.btn button{
+    border-radius: 0px;
+}
+#clr{
+    border: none;
+    width: 50%;
+    font-weight: bolder;
+    margin-right: 5px;
+    transition: ease-in-out 0.2s;
+    background-color: #EEEEEE;
+}
+#clr:active{
+    background-color: #7A9E9F;
+}
+#apl{
+    border: none;
+    color: white;
+    width: 50%;
+    font-weight: bolder;
+    background-color: #FF8C42;
+    transition: ease-in-out 0.2s;
+}
+#apl:active{
+    background-color: #222831;
+}
+
+.wrapper{
+    width: 75%;
+    height: auto;
+    float: right;
+    margin: auto;
+    padding-bottom: 50px;
+    margin-right: 0px;
+    display: grid;
+    grid-template-columns: auto auto auto auto; 
+    grid-gap: 50px 0px;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.image{
+    width: 75%;
+    height: auto;
+    margin: auto;
+}
+/*Card Style*/
+.laptop{
+    width: 266px;
+    background-color: white;
+    font-family: Gayathri Thin;
+    box-shadow: 0px 2px 6px 0px rgba(30,30,60,0.25);
+    transition: ease-in 0.3s;
+}
+.laptop:hover{
+    transform: scale(1.05);
+    box-shadow: 0px -15px 25px -4px rgba(30,30,60,0.25), 0px 15px 25px -4px rgba(30,30,60,0.25);
+}
+/*box-shadow: 0.5px 0.5px 5px rgb(211, 206, 206);*/
+.card-foot{
+    transition:  ease-in-out 0.5s;
+    padding: 10px 0px;
+}
+.laptop:hover .card-foot{
+    background-color: #fa4659;
+    color: white;
+}
+.laptop h1{
+    font-family: Open Sans;
+}
+/*Button Style*/
+button{
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: white;
+    border: 2px solid black;
+    transition: ease-in-out 0.5s;
+}
+.laptop:hover button{
+    color: white;
+    background-color: #fa4659;
+    border: 2px solid beige;
+}
+.laptop:hover button:hover{
+    background-color: #303841;
+}
+button:focus{
+    outline: none;
+}

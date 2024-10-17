@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: hsl(0, 0%, 98%);
+    min-width: 1300px;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+a:link,a:visited{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: lightblue;
+}
+.logo{
+    width: 200px;
+}
+.header ul ul a:link,.header ul ul a:visited{
+    color: black;
+}
+.header{
+    padding: 10px;
+    background-color: #222831;
+    height: 55px;
+    display: flex;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.header ul{
+    display: inline-flex;
+    list-style-type: none;
+    position: relative;
+    padding: 5px;
+    margin: auto;
+    margin-right: 20px;
+}
+.header p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+.header ul ul{
+    display: none;
+    position: absolute;
+}
+.header ul ul li{
+    width: 100px;
+    background-color: white;
+    text-align: right;
+    padding: 10px;
+    box-shadow: -5px 5px 25px -4px rgba(30,30,60,0.25);
+    cursor: pointer;
+}
+.header ul ul li:hover{
+    border: none;
+    border-right: 3px solid red;
+}
+.header ul li:hover ul{
+    display: block;
+}
+.container{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    margin-top: 5%;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-right: 15px;
+    box-shadow: 0px 0px 25px -4px rgba(30,30,60,0.25);
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+.image{
+    width: 100%;
+    height: 88%;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.button{
+    display: flex;
+    width: 98%;
+    height: 25%;
+    padding: 5px;
+    margin: auto;
+}
+.button button{
+    color: white;
+}
+#cart{
+    border: none;
+    width: 50%;
+    margin-right: 5px;
+    border-radius: 0px;
+    font-weight: bolder;
+    background-color: #ffb515;
+}
+#cart:active{
+    background-color: #ff9a00;
+}
+#cart:focus{
+    outline: none;
+}
+#buy{
+    border: none;
+    width: 50%;
+    font-weight: bolder;
+    border-radius: 0px;
+    background-color: #ff5700;
+}
+#buy:active{
+    background-color: #da4302;
+}
+#buy:focus{
+    outline: none;
+}
+
+.mainview{
+    width: 70%;
+    box-shadow: 0px 0px 25px -4px rgba(30,30,60,0.25);
+}
+.textview{
+    padding: 30px;
+    line-height: 30px;
+}
+h2{
+    font-family: Ubuntu;
+}
+h3{
+    font-family: Mandali;
+}
+p{
+    font-family: Varela Round;
+}
