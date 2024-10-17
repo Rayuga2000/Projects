@@ -20,6 +20,10 @@ button{
     font-size: large;
     font-family: poppins;
 }
+img{
+    display: block;
+    max-width: 100%;
+}
 .card{
     width: 75%;
     border-radius: 0;
@@ -32,7 +36,10 @@ button{
     &-intro{
         @extend .card;
         padding: 0;
+        @apply mt-[20%] md:mt-[10%] lg:mt-[5%];
     }
+    @apply w-[85%] sm:w-[75%];
+    
 }
 
 .header{
@@ -41,21 +48,19 @@ button{
     font-weight: normal;
     &-intro{
         @extend .header;
-        line-height: 1.3em;
-        line-height-step: 2.3em;
     }
 }
 .profile-img{
-    width: 50%;
-    background: url("/public/asta.jpg") no-repeat center/cover; /* url repeat position/size */
+    @apply mt-[-18%] w-3/5  md:mt-[-50%] md:mr-[-5%] lg:m-0 lg:w-[40%];
     img{
-        max-width: 50%;
-        object-fit: contain;
+        width: 100%;
     }
 }
 #intro{
-    padding: 2%;
-    pre{
+    @apply p-[5%] md:w-[60%] lg:w-[60%] lg:p-[3%];// border-4 border-red-500;
+    p{
+        line-height-step: 2.3em;
+        @apply leading-[1.2em] lg:leading-[1.8em];
         font-family: rubik;
     }
     
@@ -120,10 +125,10 @@ button{
     @apply p-4 flex flex-col items-center;
     .header{
         @extend .header;
-        font-size: 2.5em;
+        font-size: 2.8rem;
         @media screen and (min-width: 560px){
             &{
-                font-size: 4.5em;
+                font-size: 4.5rem;
             }
         }
     }
