@@ -6,15 +6,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Protest+Strike&family=Space+Grotesk:wght@300..700&display=swap'); 
 
 
+$body_color: #ED2939;
+
 body{
-    background-color: #ED2939;
+    background-color: $body_color;
 }
 label{
     margin-top: 0.5em;
 }
 button{
-    background-color: #ED2939;
-    border: none;
+    background-color: $body_color;
     color: white;
     padding: 0.5em;
     font-size: large;
@@ -23,7 +24,13 @@ button{
 img{
     display: block;
     max-width: 100%;
+    object-fit: cover;
 }
+
+.profile-img{
+    @apply flex justify-center mt-[-18%] w-[60%] md:mt-[-50%] md:mr-[-5%] lg:m-0 lg:w-[30%];
+}
+
 .card{
     width: 75%;
     border-radius: 0;
@@ -50,12 +57,7 @@ img{
         @extend .header;
     }
 }
-.profile-img{
-    @apply mt-[-18%] w-3/5  md:mt-[-50%] md:mr-[-5%] lg:m-0 lg:w-[40%];
-    img{
-        width: 100%;
-    }
-}
+
 #intro{
     @apply p-[5%] md:w-[60%] lg:w-[60%] lg:p-[3%];// border-4 border-red-500;
     p{

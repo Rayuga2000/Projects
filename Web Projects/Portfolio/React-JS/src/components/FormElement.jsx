@@ -31,7 +31,7 @@ export default function FormElement(){
                     <span className="label-text">Write a Message!</span>
                 </div>
                 <input  type="text" placeholder="Enter Message" className="input input-bordered max-w-xs" />
-                <button type="submit" className="mt-4 flex justify-center max-w-32 place-self-center">Send <img src="/icons/send.svg" /></button>
+                <button type="submit" id="contactButton" className="mt-4 flex justify-evenly max-w-32 place-self-center">Send <img className="ml-[-1em]" src="/icons/send.svg" /></button>
             </label>
         </div>
     )
