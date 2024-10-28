@@ -117,10 +117,10 @@ def tweak_xl():
   print('Excel file saved as final.xlsx')
 
 if __name__=='__main__':
-    GOOGLE_API_KEY = 'AIzaSyBaZbMC10O4ovbY_fac-slH5ByjQR3_WkE'
+    GOOGLE_API_KEY = #
     genai.configure(api_key=GOOGLE_API_KEY)
 
-    OPENAI_API_KEY = 'sk-proj-S6NBF2oFTtcU193xuEDLT3BlbkFJYtIKYTHqoeueE8ad7ENn'
+    OPENAI_API_KEY = #
     client = OpenAI(api_key=OPENAI_API_KEY, )
 
     while(True):
