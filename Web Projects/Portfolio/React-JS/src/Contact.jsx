@@ -1,7 +1,7 @@
 import FormElement from './components/FormElement.jsx'
-export default function Card(){
+export default function Contact({id}){
   return(
-    <section>
+    <section id={id}>
       <div className="card flex flex-col-reverse items-stretch  text-nowrap lg:flex-row">
         <FormElement />
         <div className="contact_card_body grow flex justify-center items-center">

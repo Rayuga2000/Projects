@@ -7,9 +7,10 @@ function Project_Item({title,desc="Lorem ipsum dolor sit amet consectetur adipis
     )
 }
 
-export default function Projects(){
+export default function Projects({id}){
+    // console.log({id});
     return(
-        <section>
+        <section id={id} className="scroll-m-9">
             <div className="card">
                 <h1 className="header">Projects</h1>
                 <hr />

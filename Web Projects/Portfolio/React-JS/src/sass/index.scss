@@ -4,12 +4,48 @@
 
 //Protest Strike, Nunito, Space Grotesk, Pacifico (fonts)
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Protest+Strike&family=Space+Grotesk:wght@300..700&display=swap'); 
-
-
+//Tilt Prism, Freeman & Open Sans
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tilt+Prism&display=swap');
 $body_color: #ED2939;
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
 
 body{
     background-color: $body_color;
+}
+.navBar{
+    @apply w-screen p-4 min-h-[8%] lg:h-[10%] flex flex-col xl:flex-row justify-around items-center gap-x-[62%] bg-black fixed top-0 left-0 right-0 z-50 shadow-[0_2px_rgba(237,41,57,1)];
+    h1{
+        @apply font-['Tilt_Prism'] text-3xl;
+    }
+    ul{
+        @apply mt-4 lg:mt-0 font-['Open_Sans'] hidden md:flex justify-evenly items-center gap-10 sm:gap-36 lg:gap-8 cursor-pointer;
+        li{
+            @apply text-white border-b-2 border-b-transparent hover:border-b-red-600;
+        }
+    }
+    
+}
+
+footer{
+    @apply flex flex-col md:flex-row gap-12 bg-black w-full p-6 mt-[8%] justify-between items-center;
+    h1{
+        @apply font-['Tilt_Prism'] text-4xl;
+    }
+    h2{
+        @apply font-['Freeman'];
+    }
+    p{
+        @apply font-['Open_Sans'] text-xs text-white/65 font-thin;
+    }
 }
 label{
     margin-top: 0.5em;
@@ -25,10 +61,6 @@ img{
     display: block;
     max-width: 100%;
     object-fit: cover;
-}
-
-.profile-img{
-    @apply flex justify-center mt-[-18%] w-[60%] md:mt-[-50%] md:mr-[-5%] lg:m-0 lg:w-[30%];
 }
 
 .card{
@@ -59,14 +91,18 @@ img{
 }
 
 #intro{
-    @apply p-[5%] md:w-[60%] lg:w-[60%] lg:p-[3%];// border-4 border-red-500;
+    @apply p-[5%] md:w-[60%] lg:w-[60%] lg:p-5 flex flex-col justify-between items-baseline;// border-4 border-red-500;
     p{
         line-height-step: 2.3em;
         @apply leading-[1.2em] lg:leading-[1.8em];
         font-family: rubik;
     }
-    
 }
+
+.profile-img{
+    @apply flex justify-center mt-[-18%] w-[60%] md:mt-[-50%] md:mr-[-5%] lg:m-0 lg:w-[32%];
+}
+
 .skill_div{
     @apply flex flex-wrap justify-center items-center gap-4;
     margin-top: 3%;
