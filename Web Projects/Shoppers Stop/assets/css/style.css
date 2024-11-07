@@ -19,13 +19,13 @@ a:hover{
     background-color: white;
 }
 .header-right i img{
-    width: 0.93%;
+    /* width: 0.93%; */
 }
 .header-left{
     margin-left: 200px;
 }
 .header-right{
-    margin-right: 200px;
+    /* margin-right: 200px; */
 }
 .header-left img{
     width: 18px;
@@ -48,7 +48,9 @@ a:hover{
     flex-basis: 72.9%;
 }
 .user-icons img{
-    width: 44px;
+    /* width: 30px; */
+    display: flex;
+    flex-direction: row;
 }
 #wishpop{
     display: none;
