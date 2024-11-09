@@ -26,7 +26,7 @@ function Intro({id}) {
   },[])
 
   return (
-    <section id={id} className="mt-[27%] sm:mt-[18%] lg:mt-auto">
+    <section id={id} className="mt-[27%] sm:mt-[18%] lg:mt-[8%]">
       <div className="card-intro flex items-center flex-col-reverse md:flex-row justify-between">
         <div id="intro">
           <p className="header-intro m-0 whitespace-break-spaces lg:whitespace-nowrap">Hello, I'm Tushar <br className="hidden lg:inline" />a Front-End <br className="lg:hidden" /><span ref={spanID} className="inline-block relative"></span></p>

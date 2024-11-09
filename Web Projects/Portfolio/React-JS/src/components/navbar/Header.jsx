@@ -1,5 +1,7 @@
-function scrollInto(id){
-    document.getElementById(id).scrollIntoView({behavior: 'smooth',})
+function scrollInto(id) {
+    const element=document.getElementById(id)
+    element.scrollIntoView({ behavior: 'smooth', })
+    element.style.marginTop="4%"
 }
 function hamburg(){
     document.getElementById("hamburger").style.display='none'
