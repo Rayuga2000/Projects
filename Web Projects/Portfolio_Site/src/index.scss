@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//Protest Strike, Nunito, Space Grotesk, Pacifico (fonts)
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Protest+Strike&family=Space+Grotesk:wght@300..700&display=swap'); 
+//Tilt Prism, Freeman & Open Sans (fonts)
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tilt+Prism&display=swap');
+// popins, rubik (fonts)
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+// style flushing
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// {default-start}
+$body_color: #ED2939;
+
+body{
+    background-color: $body_color;
+    color: white;
+}
+img{
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+button{
+    background-color: $body_color;
+    color: white;
+    padding: 0.5em;
+    font-size: large;
+    font-family: poppins;
+}
+
+// Paragraph Heading Style
+.heading{
+    @apply m-0 whitespace-break-spaces lg:whitespace-nowrap text-[3em] xl:text-[4.5em];
+    font-family: poppins;
+    font-weight: normal;
+}
+
+// card-style
+.card{
+    @apply md:w-[85%] lg:w-[95%] xl:w-[75%] mx-auto mt-4 mb-8 xl:mb-36 bg-black;
+    box-shadow: 1px 1px 10px 5px rgba(109, 56, 56, 0.705);
+    &-intro{// intro card
+        @extend .card;
+        @apply p-0 mt-[35%] md:mt-[25%] lg:mt-24 xl:mt-[2%] flex flex-col-reverse md:flex-row items-center justify-between;
+    }
+    &-skills{// skills card
+        @extend .card;
+        @apply flex flex-col p-6 xl:w-[35%] xl:mt-[2%];
+        h1{
+            @extend .heading;
+            @apply md:text-6xl xl:text-8xl;
+        }
+        button{
+            @apply rounded bg-gradient-to-r from-red-400 from-10% via-red-500 via-40% to-blue-400 to-100% ;
+        }
+    }
+}
+
+// {default-end}
+
+// {custom-start}
+
+//Header
+.header{
+    @apply w-screen py-3 px-4 flex flex-col lg:flex-row justify-between items-center bg-black fixed top-0 z-50 shadow-[0_2px_rgba(237,41,57,1)];
+    h1{
+        @apply font-['Tilt_Prism'] text-3xl;
+    }
+    ul{
+        @apply mt-4 lg:mt-0 font-['Open_Sans'] hidden md:flex justify-evenly items-center gap-10 sm:gap-36 lg:gap-8 cursor-pointer;
+        li{
+            @apply text-white border-b-2 border-b-transparent hover:border-b-red-600;
+        }
+    }
+}
+
+//Footer
+footer{
+    @apply lg:fixed bottom-0 flex flex-col gap-10 md:flex-row bg-black w-full p-6 justify-between items-center;
+    h1{
+        @apply font-['Tilt_Prism'] text-4xl;
+    }
+    h2{
+        @apply font-['Freeman'];
+    }
+    p{
+        @apply font-['Open_Sans'] text-xs text-white/65 font-thin;
+    }
+}
+
+// intro card
+#intro{
+    @apply p-3 md:p-4 lg:pl-5 md:w-[60%] lg:w-[50%] flex flex-col justify-between items-baseline;// border-4 border-red-500;
+    p{
+        @apply leading-[1.2em] lg:leading-[1.8em];
+        font-family: rubik;
+    }
+}
+
+// Image Style @ Intro Section
+.profile-img{
+    @apply flex justify-center mt-[-18%] md:w-[60%] md:mt-[-45%] md:mr-[-5%] lg:m-0 lg:w-[40%] xl:w-[35%] overflow-hidden;
+}
+
+// Hero Section
+.hero_Section{
+    @apply xl:mt-12 flex flex-col xl:flex-row justify-evenly xl:grow xl:gap-4 p-4;
+}
+// {custom-end}

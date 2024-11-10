@@ -6,18 +6,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Protest+Strike&family=Space+Grotesk:wght@300..700&display=swap'); 
 //Tilt Prism, Freeman & Open Sans
 @import url('https://fonts.googleapis.com/css2?family=Freeman&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tilt+Prism&display=swap');
+
 $body_color: #ED2939;
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
 
 body{
     background-color: $body_color;
 }
+
 .navBar{
     @apply w-screen p-4 min-h-[8%] lg:h-[10%] flex flex-col xl:flex-row justify-around items-center gap-x-[62%] bg-black fixed top-0 left-0 right-0 z-50 shadow-[0_2px_rgba(237,41,57,1)];
     h1{
@@ -29,7 +24,6 @@ body{
             @apply text-white border-b-4 border-b-transparent hover:border-b-red-600;
         }
     }
-    
 }
 
 footer{
@@ -44,6 +38,7 @@ footer{
         @apply font-['Open_Sans'] text-xs text-white/65 font-thin;
     }
 }
+
 label{
     margin-top: 0.5em;
 }
