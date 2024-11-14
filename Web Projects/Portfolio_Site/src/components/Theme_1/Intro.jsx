@@ -25,8 +25,13 @@ function Intro({id}) {
   return (
     <section id={id} className="card-intro">
       <div id="intro">
-        <p className="heading">Hello, I'm Tushar <br className="hidden lg:inline" />a Front-End <br className="lg:hidden" /><span ref={spanID} className="inline-block relative"></span></p>
-        <p className="mt-7 mb-4">I like bringing beautiful web designs into life using the power of coding. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <p className="heading">Hello, I'm Tushar <br className="hidden lg:inline" />a Front-End <br className="" /><span ref={spanID} className="inline-block relative"></span></p>
+        <p className="mt-7 mb-4">
+          I like bringing beautiful web designs into life using the power of coding.&nbsp;
+          <br />
+          My motto is <span className="text-white/70 font-semibold text-xl font-['Nunito']">beauty and function in equal measures</span>. <br />
+          Excited in <span className="text-blue-400 font-semibold text-2xl font-['Nunito']">React</span> , <span className="text-pink-400 font-semibold text-2xl font-['Nunito']">UI/UX designs</span> & <span className="text-green-400 font-semibold text-2xl font-['Nunito']">Deep Learning</span>.
+        </p>
         <div className="mt-6 mb-4 flex justify-start gap-6 lg:gap-10">
             <Button btn_color="#ED2939" />
             <Button btn_color="#00c853" />
