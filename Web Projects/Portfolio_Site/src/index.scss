@@ -52,14 +52,14 @@ button{
     box-shadow: 1px 1px 10px 5px rgba(109, 56, 56, 0.705);
     &-intro{// intro card
         @extend .card;
-        @apply p-0 flex flex-col-reverse md:flex-row items-center justify-between col-span-2;
+        @apply p-0 flex flex-col-reverse md:flex-row items-center justify-between col-span-8;
     }
     &-skills{// skills card
         @extend .card;
-        @apply flex flex-col gap-12 p-6;
+        @apply flex flex-col gap-12 p-6 col-span-4;
         h1{
             @extend .heading;
-            @apply md:text-5xl xl:text-7xl mb-4;
+            @apply md:text-5xl xl:text-7xl mb-12;
         }
         h2{
             @extend .heading;
@@ -71,7 +71,7 @@ button{
     }
     &-project{
         @extend .card;
-        @apply p-4 xl:col-span-3;
+        @apply p-4 col-span-12;
         h1{
             @extend .heading;
             @apply md:text-5xl xl:text-7xl;
@@ -79,20 +79,59 @@ button{
     }
     &-github{
         @extend .card;
-        @apply flex flex-col gap-12 justify-between items-center p-6;
+        @apply flex flex-col col-span-2 gap-12 justify-between items-center p-6;
+
+        img{
+            @apply rounded-[50%] border-4;
+        }
         h1{
             @extend .heading;
             @apply text-[2em];
         }
         button{
-            @apply bg-purple-500 rounded;
+            @apply bg-purple-500 rounded text-sm font-medium;
         }
     }
     &-contact{
         @extend .card;
-        @apply flex flex-col justify-between gap-4 col-span-2 p-8;
+        @apply p-4 flex flex-col justify-evenly gap-8 items-center col-span-4;
         h1{
             @extend .heading;
+            @apply md:text-5xl xl:text-7xl;
+        }
+        textarea{
+            min-height: 150px;
+            resize: none;
+        }
+        input,textarea{
+            @apply bg-transparent outline-none border-b-2 border-b-red-500/40 hover:border-b-red-500 ;
+        }
+    }
+    &-exp{
+        @extend .card;
+        @apply p-4 col-span-6;
+        h1{
+            @extend .heading;
+            @apply md:text-5xl xl:text-7xl mb-16;
+        }
+        p{
+            @apply text-sm text-white/70;
+        }
+        .flex-container{
+            @apply flex gap-8 bg-gray-500/10 p-4 items-center justify-around;
+            h4{
+                @apply font-['Nunito'] font-bold text-4xl mb-4;
+            }
+            div:first-of-type{
+                @apply bg-gray-500 size-64 heading flex items-center justify-center;
+            }
+            div:last-of-type{
+                @apply flex flex-col gap-2 justify-center w-[45%] border-r-4;
+            }
+        }
+        ul{
+            @apply text-xs w-[40%];
+            list-style-type: disc;
         }
     }
 }
@@ -110,22 +149,25 @@ button{
     ul{
         @apply mt-4 lg:mt-0 font-['Open_Sans'] hidden md:flex justify-evenly items-center gap-10 sm:gap-36 lg:gap-8 cursor-pointer;
         li{
-            @apply text-white border-b-2 border-b-transparent hover:border-b-red-600;
+            @apply text-white font-semibold border-b-2 border-b-transparent hover:border-b-red-600;
         }
     }
 }
 
 //Footer
 footer{
-    @apply lg:fixed bottom-0 flex flex-col gap-10 md:flex-row bg-black w-full p-6 justify-between items-center;
+    @apply flex flex-col gap-16 bg-black w-full py-64 justify-between items-center;
     h1{
-        @apply font-['Tilt_Prism'] text-4xl;
-    }
-    h2{
-        @apply font-['Freeman'];
+        @apply font-['Freeman'] text-9xl text-green-400/70;
     }
     p{
-        @apply font-['Open_Sans'] text-xs text-white/65 font-thin;
+        @apply font-['Open_Sans'] font-semibold text-white/70 text-center text-wrap w-1/4;
+    }
+    p:last-of-type{
+        @apply font-['Nunito'] w-full text-nowrap text-lg font-normal;
+    }
+    img{
+        @apply rounded p-2 hover:bg-gray-400/40;
     }
 }
 
@@ -147,7 +189,7 @@ footer{
 
 // Hero Section
 .hero_Section{
-    @apply w-[95%] md:w-[85%] lg:w-[95%] xl:w-[99%] mx-auto my-[35%] md:my-[20%] lg:my-[8%] xl:my-[5%] grid xl:grid-cols-3 auto-rows-auto gap-x-3 gap-y-8;
+    @apply w-[95%] md:w-[85%] lg:w-[95%] xl:w-[99%] mx-auto my-[35%] md:my-[20%] lg:my-[8%] xl:my-[5%] grid xl:grid-cols-12 auto-rows-auto gap-x-3 gap-y-8;
     //flex flex-col xl:flex-row justify-between xl:gap-4 p-4
 }
 // {custom-end}

@@ -4,15 +4,18 @@ export default function Contact({id}) {
   return (
       <section id={id} className='card-contact'>
         <h1>Contact Me</h1>
-        <div>
-            <form action="get">
-                <label htmlFor="name">Name</label>
-                <input type="text" id='name' placeholder='Enter Your Name' />
-                <label htmlFor="email">E-mail</label>
-                <input type="text" id='email' placeholder='Enter Your Email' /><br />
-                <input type="text-area" placeholder='Enter a message!' />
-            </form>
-        </div>
+        <form className='grid grid-cols-12 p-12 auto-rows-auto gap-x-8 gap-y-10'>
+          <div className='col-span-6'>
+            {/* <label htmlFor="name">Name</label><br /> */}
+            <input type="text" id='name' placeholder='Enter Your Name' /> 
+          </div>
+          <div className='col-span-6'>
+            {/* <label htmlFor="email">E-mail</label><br /> */}
+            <input type="text" id='email' placeholder='Enter Your Email' />
+          </div>
+        <textarea className='col-span-12' placeholder='Enter a message!'></textarea>
+        <button type='submit' className='col-[5/8] mb-[-50%]'>Send</button>
+        </form>
     </section>
   )
 }

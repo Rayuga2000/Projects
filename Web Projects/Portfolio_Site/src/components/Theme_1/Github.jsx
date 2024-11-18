@@ -32,8 +32,8 @@ function Github() {
         .catch(error => console.error('Error fetching data:', error));
     return (
     <section className='card-github'>
-          <img src={image} className="rounded-[50%]" width="128px" alt="" />
-          <h1 className="heading">{name}</h1>
+          <img src={image} width="128px" alt="" />
+          <h1>{name}</h1>
           <p>Public Repos: {repo}</p>
           <button>Follow on Github</button>
     </section>
