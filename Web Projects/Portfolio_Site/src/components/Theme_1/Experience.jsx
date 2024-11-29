@@ -1,7 +1,7 @@
-export default function Experience() {
+export default function Experience({id}) {
     return (
-        <section className="card-exp">
-            <h1>Work Experience</h1>
+        <section id={id}  className="card-exp">
+            <h1>Work <br className="mt-4 mb-8 xl:hidden"/> <span className='border-b-4 border-b-red-500 pb-1'>Experience</span></h1>
             <div className="flex-container">
                 <div>2021</div>
                 <div>

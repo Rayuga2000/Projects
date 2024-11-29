@@ -25,7 +25,7 @@ function Intro({id}) {
   return (
     <section id={id} className="card-intro">
       <div id="intro">
-        <p className="heading">Hello, I'm Tushar <br className="hidden lg:inline" />a Front-End <br className="" /><span ref={spanID} className="inline-block relative"></span></p>
+        <p className="heading-intro">Hello, I'm Tushar <br className="hidden lg:inline" />a Front-End <br className="" /><span ref={spanID} className="inline-block relative"></span></p>
         <p className="mt-7 mb-4">
           I like bringing beautiful web designs into life using the power of coding.&nbsp;
           <br />

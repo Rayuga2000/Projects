@@ -13,7 +13,7 @@ function scrollInto(id) {
 function Header() {
   return (
     <header className="header">
-        <h1>DEV.IO</h1>
+        <h1>TUSHAR.IO</h1>
         {/* <button id="hamburger" className="lg:hidden bg-transparent fixed right-0" onClick={()=>hamburg()}>
             <img src="/icons/icons8-hamburger-menu-50.png" width="32px"/>
         </button> */}
@@ -21,11 +21,17 @@ function Header() {
             <li onClick={()=>scrollInto("intro_Section")}>
                 INTRO
             </li>
-            <li onClick={()=>scrollInto("project_Section")}>
+            <li onClick={()=>scrollInto("skill_Section")}>
                 SKILLS
             </li>
             <li onClick={()=>scrollInto("project_Section")}>
                 PROJECTS
+              </li>
+              <li onClick={()=>scrollInto("certificate_Section")}>
+                CERTIFICATES
+              </li>
+              <li onClick={()=>scrollInto("experience_Section")}>
+                EXPERIENCE
             </li>
             <li onClick={()=>scrollInto("contact_Section")}>
                 CONTACT

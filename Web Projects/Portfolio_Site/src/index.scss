@@ -31,6 +31,7 @@ img{
     max-width: 100%;
     object-fit: cover;
 }
+
 button{
     background-color: $body_color;
     color: white;
@@ -41,10 +42,16 @@ button{
 
 // Paragraph Heading Style
 .heading{
-    @apply whitespace-break-spaces lg:whitespace-nowrap leading-3 text-[3em] xl:text-[4.5em];
+    @apply whitespace-break-spaces lg:whitespace-nowrap leading-3 text-[3em] md:text-5xl xl:text-7xl;
     font-family: poppins;
     font-weight: normal;
+    &-intro{
+        @extend .heading;
+        @apply  text-[3em] xl:text-[4.5em];
+    }
 }
+
+
 
 // card-style
 .card{
@@ -52,14 +59,14 @@ button{
     box-shadow: 1px 1px 10px 5px rgba(109, 56, 56, 0.705);
     &-intro{// intro card
         @extend .card;
-        @apply p-0 flex flex-col-reverse md:flex-row items-center justify-between col-span-8;
+        @apply p-0 flex flex-col-reverse md:flex-row items-center justify-between col-span-12 xl:col-span-8;
     }
     &-skills{// skills card
         @extend .card;
-        @apply flex flex-col gap-12 p-6 col-span-4;
+        @apply flex flex-col gap-12 p-6 col-span-12 xl:col-span-4;
         h1{
             @extend .heading;
-            @apply md:text-5xl xl:text-7xl mb-12;
+            @apply mb-12;
         }
         h2{
             @extend .heading;
@@ -71,15 +78,27 @@ button{
     }
     &-project{
         @extend .card;
-        @apply p-4 col-span-12;
+        @apply p-4 col-span-12 xl:col-span-6;
         h1{
             @extend .heading;
-            @apply md:text-5xl xl:text-7xl;
+            @apply mb-16;
+        }
+    }
+    &-certificates{
+        @extend .card-project;
+        h1{
+            @apply mb-16 xl:mb-20 pt-4 xl:p-0;
+        }
+        .swiper{
+            @apply xl:m-8;
+        }    
+        .swiper-slide {
+            @apply flex items-center justify-center;
         }
     }
     &-github{
         @extend .card;
-        @apply flex flex-col col-span-2 gap-12 justify-between items-center p-6;
+        @apply flex flex-col col-span-12 xl:col-span-2 gap-12 justify-between items-center p-6;
 
         img{
             @apply rounded-[50%] border-4;
@@ -94,10 +113,10 @@ button{
     }
     &-contact{
         @extend .card;
-        @apply p-4 flex flex-col justify-evenly gap-8 items-center col-span-4;
+        @apply p-4 flex flex-col justify-evenly gap-8 items-center col-span-12 xl:col-span-4;
         h1{
             @extend .heading;
-            @apply md:text-5xl xl:text-7xl;
+            @apply p-4;
         }
         textarea{
             min-height: 150px;
@@ -109,28 +128,28 @@ button{
     }
     &-exp{
         @extend .card;
-        @apply p-4 col-span-6;
+        @apply p-4 col-span-12 xl:col-span-6;
         h1{
             @extend .heading;
-            @apply md:text-5xl xl:text-7xl mb-16;
+            @apply mb-16;
         }
         p{
             @apply text-sm text-white/70;
         }
         .flex-container{
-            @apply flex gap-8 bg-gray-500/10 p-4 items-center justify-around;
+            @apply flex flex-col xl:flex-row gap-8 bg-gray-500/10 p-4 items-center xl:justify-around;
             h4{
-                @apply font-['Nunito'] font-bold text-4xl mb-4;
+                @apply font-['Nunito'] font-bold text-4xl mb-4 ;
             }
             div:first-of-type{
                 @apply bg-gray-500 size-64 heading flex items-center justify-center;
             }
             div:last-of-type{
-                @apply flex flex-col gap-2 justify-center w-[45%] border-r-4;
+                @apply flex flex-col gap-2 md:items-center justify-center xl:w-[45%] xl:border-r-4;
             }
         }
         ul{
-            @apply text-xs w-[40%];
+            @apply text-sm xl:text-xs xl:w-[40%];
             list-style-type: disc;
         }
     }
@@ -156,15 +175,15 @@ button{
 
 //Footer
 footer{
-    @apply flex flex-col gap-16 bg-black w-full py-64 justify-between items-center;
+    @apply col-span-12 flex flex-col gap-24 xl:gap-16 bg-black w-full px-8 xl:px-0 py-[35%] xl:py-[10%] mt-8 justify-between items-center;
     h1{
-        @apply font-['Freeman'] text-9xl text-green-400/70;
+        @apply font-['Freeman'] text-6xl xl:text-9xl text-green-400/70;
     }
     p{
-        @apply font-['Open_Sans'] font-semibold text-white/70 text-center text-wrap w-1/4;
+        @apply font-['Open_Sans'] font-semibold text-white/70 text-center text-wrap xl:w-1/4;
     }
     p:last-of-type{
-        @apply font-['Nunito'] w-full text-nowrap text-lg font-normal;
+        @apply font-['Nunito'] w-full xl:text-nowrap text-lg font-normal;
     }
     img{
         @apply rounded p-2 hover:bg-gray-400/40;
@@ -184,12 +203,24 @@ footer{
 
 // Image Style @ Intro Section
 .profile-img{
-    @apply flex justify-center mt-[-18%] md:w-[60%] md:mt-[-55%] md:mr-[-5%] lg:m-0 lg:w-[45%] xl:w-[35%] overflow-hidden;
+    @apply flex justify-center mt-[-18%] md:w-[60%] md:mt-[-55%] md:mr-[-5%] lg:m-0 lg:w-[45%] xl:w-[40%] overflow-hidden;
 }
 
 // Hero Section
 .hero_Section{
-    @apply w-[95%] md:w-[85%] lg:w-[95%] xl:w-[99%] mx-auto my-[35%] md:my-[20%] lg:my-[8%] xl:my-[5%] grid xl:grid-cols-12 auto-rows-auto gap-x-3 gap-y-8;
+    @apply w-[95%] md:w-[85%] lg:w-[95%] xl:w-[98%] mx-auto mt-[35%] md:mt-[20%] lg:mt-[8%] xl:mt-[5%] grid grid-cols-12 auto-rows-auto  gap-x-4 gap-y-5;
     //flex flex-col xl:flex-row justify-between xl:gap-4 p-4
 }
+
+// 
+.projectElement{
+    @apply bg-gray-500/10 p-4 xl:p-0;
+    h2{
+        @apply font-['Nunito'] font-bold text-4xl mb-4;
+    }
+    span, p:last-of-type{
+        @apply text-white/50;
+    }
+}
+
 // {custom-end}
