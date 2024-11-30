@@ -98,14 +98,14 @@ button{
     }
     &-github{
         @extend .card;
-        @apply flex flex-col col-span-12 xl:col-span-2 gap-12 justify-between items-center p-6;
+        @apply flex flex-col col-span-12 xl:col-span-2 justify-between items-center p-6;
 
         img{
             @apply rounded-[50%] border-4;
         }
         h1{
             @extend .heading;
-            @apply text-[2em];
+            @apply text-[2em] mt-[-25%];
         }
         button{
             @apply bg-purple-500 rounded text-sm font-medium;
@@ -187,6 +187,11 @@ footer{
     }
     img{
         @apply rounded p-2 hover:bg-gray-400/40;
+    }
+    div{
+        button{
+            all: unset;
+        }
     }
 }
 

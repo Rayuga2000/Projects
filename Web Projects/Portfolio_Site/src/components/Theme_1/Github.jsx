@@ -5,7 +5,9 @@ function Github() {
     const url = `https://api.github.com/users/${username}`;
 
     const [name, setName] = useState()
-    const [image,setImage]=useState()
+    const [image, setImage] = useState()
+    const [location, setLocation] = useState()
+    // const [bio,setBio]=useState()
     const [repo,setRepo]=useState()
     
     fetch(url)
@@ -20,8 +22,10 @@ function Github() {
             // console.log('Username:', data.login);
             setName(data.name)
             // console.log('Name:', name);
+            // setBio(data.bio)
             // console.log('Bio:', data.bio);
-            // console.log('Location:', data.location);
+            setLocation(data.location)
+            console.log('Location:', data.location);
             setRepo(data.public_repos)
             // console.log('Public Repos:', public_repos);
             // console.log('Followers:', data.followers);
@@ -33,8 +37,10 @@ function Github() {
     return (
     <section className='card-github'>
           <img src={image} width="128px" alt="" />
-          <h1>{name}</h1>
-          <p>Public Repos: {repo}</p>
+            <h1>{name}</h1>
+            <p className="text-sm mt-[-25%]">[ {location} ]</p>
+            {/* <p className="text-sm text-center">{bio}</p> */}
+            <p>Public Repos: {repo}</p>
           <button>Follow on Github</button>
     </section>
   )
