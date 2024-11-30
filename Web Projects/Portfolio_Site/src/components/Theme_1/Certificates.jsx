@@ -1,6 +1,4 @@
-import { useEffect, useState } from 'react';
-import { nanoid } from '@reduxjs/toolkit';
-
+import { useEffect, useId, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -50,7 +48,7 @@ export default function Certificates({id}) {
       >
         {
           certificates.map((currValue) => (
-            <SwiperSlide key={nanoid()}><img src={currValue} /></SwiperSlide>
+            <SwiperSlide key={useId()}><img src={currValue} /></SwiperSlide>
           ))
         }
       </Swiper>

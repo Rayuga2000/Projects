@@ -98,14 +98,14 @@ button{
     }
     &-github{
         @extend .card;
-        @apply flex flex-col col-span-12 xl:col-span-2 justify-between items-center p-6;
+        @apply flex flex-col col-span-12 xl:col-span-2 justify-evenly items-center p-6;
 
         img{
             @apply rounded-[50%] border-4;
         }
         h1{
             @extend .heading;
-            @apply text-[2em] mt-[-25%];
+            @apply text-[2em] ;
         }
         button{
             @apply bg-purple-500 rounded text-sm font-medium;
@@ -208,7 +208,7 @@ footer{
 
 // Image Style @ Intro Section
 .profile-img{
-    @apply flex justify-center mt-[-18%] md:w-[60%] md:mt-[-55%] md:mr-[-5%] lg:m-0 lg:w-[45%] xl:w-[40%] overflow-hidden;
+    @apply flex justify-center mt-[-18%] md:w-[60%] md:mt-[-55%] md:mr-[-5%] lg:m-0 lg:w-[45%] xl:w-[35%] overflow-hidden;
 }
 
 // Hero Section
