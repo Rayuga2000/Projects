@@ -4,7 +4,7 @@ function ProjectElement({id,imgSrc="",}) {
   return (
     <section id={id} className='card-project'>
       <h1>Featured <br className="mt-4 mb-8 xl:hidden"/><span className='border-b-4 border-b-red-500 pb-1'>Projects</span></h1>
-      <div className='flex flex-col gap-4 justify-between'>
+      <div className='flex flex-col gap-4 justify-evenly'>
         <div className='projectElement'>
           <img src={imgSrc} alt="" />
           <div>

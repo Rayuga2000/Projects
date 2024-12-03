@@ -1,6 +1,8 @@
 import { Footer, Header, Intro, Skills, Contact, Github,Experience,Projects,Certificates } from './components'
 
-function App() {    
+function App() {
+    console.log(import.meta.env.VITE_ENDPOINT,import.meta.env.VITE_PROJECT_ID,import.meta.env.VITE_BUCKET_ID);
+    
     return (
         <>
             <Header />

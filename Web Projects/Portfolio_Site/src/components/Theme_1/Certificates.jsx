@@ -1,4 +1,5 @@
 import { useEffect, useId, useState } from 'react';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -7,18 +8,10 @@ import 'swiper/css/effect-creative';
 
 // import required modules
 import { Autoplay, Mousewheel, EffectCreative } from 'swiper/modules';
+import images from '../../appwrite/config';
 
-export default function Certificates({id}) {
-  const [certificates,setCertificates] = useState([])
-  
-  useEffect(() => {
-      fetch('/files')
-      .then((res) => res.json())
-      .then((data) => {
-        setCertificates(data)
-      })
-      .catch(error => console.error('Error fetching data:', error))
-  }, [])
+
+export default function Certificates({ id }) {
   
   return (
     <section id={id} className='card-certificates'>
@@ -47,7 +40,7 @@ export default function Certificates({id}) {
         modules={[Autoplay, Mousewheel, EffectCreative]}
       >
         {
-          certificates.map((currValue) => (
+          images.map((currValue) => (
             <SwiperSlide key={useId()}><img src={currValue} /></SwiperSlide>
           ))
         }

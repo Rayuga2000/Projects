@@ -5,15 +5,14 @@ function Github() {
     const gitURL = `https://api.github.com/users/${username}`;
     const gitFollowingURL = gitURL + "/following"
     // console.log(gitFollowingURL);
-    
 
     const [name, setName] = useState()
     const [image, setImage] = useState()
     const [location, setLocation] = useState()
     const [repo, setRepo] = useState()
-    const [following, setFollowing] = useState()
+    const [following, setFollowing] = useState([])
 
-    useEffect(() => {
+    useEffect(() => {        
         fetch(gitFollowingURL)
             .then(response => {
                 if (!response.ok) {
@@ -21,9 +20,12 @@ function Github() {
                 }
                 return response.json();
             })
-            .then((data)=>setFollowing(data))
+            .then((data) => {
+                setFollowing(data)
+                // console.log('Follow',following);
+            })
             .catch(error => console.error('Error fetching data:', error))
-
+        
         fetch(gitURL)
             .then(response => {
                 if (!response.ok) {
@@ -47,24 +49,22 @@ function Github() {
                 // console.log('Profile Image:', avatar_url);
             })
             .catch(error => console.error('Error fetching data:', error));
-    },[])
+    }, [])
 
-    console.log(following);
-    
     return (
     <section className='card-github'>
-          <img src={image} width="128px" alt="" />
-            <h1>{name}</h1>
-            <p className="text-sm">[ {location} ]</p>
-            {/* <p className="text-sm text-center">{bio}</p> */}
-            <p className="border-b-2 border-b-cyan-400">Following</p>
-            <span className="text-white/50">
-                {following.map((item) => (
-                    <p key={useId()} className="text-sm text-center">{item.login}</p>
-                ))}
-            </span>
-            <p>Public Repos: {repo}</p>
-          <button onClick={() => window.open('https://github.com/Rayuga2000','_blank')}>Follow on Github</button>
+        <img src={image} width="128px" alt="" />
+        <h1>{name}</h1>
+        <p className="text-sm">[ {location} ]</p>
+        {/* <p className="text-sm text-center">{bio}</p> */}
+        <p className="border-b-2 border-b-cyan-400">Following</p>
+        <span className="text-white/50">
+            {following.map((item,i) => (
+                <p key={i} className="text-sm text-center">{item.login}</p>
+            ))}
+        </span>
+        <p>Public Repos: {repo}</p>
+        <button onClick={() => window.open('https://github.com/Rayuga2000','_blank')}>Follow on Github</button>
     </section>
   )
 }

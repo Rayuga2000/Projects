@@ -220,6 +220,9 @@ footer{
 // 
 .projectElement{
     @apply bg-gray-500/10 p-4 xl:p-0;
+    div{
+        @apply p-4;
+    }
     h2{
         @apply font-['Nunito'] font-bold text-4xl mb-4;
     }
