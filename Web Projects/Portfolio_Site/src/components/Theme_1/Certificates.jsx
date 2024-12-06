@@ -20,6 +20,19 @@ export default function Certificates({ id }) {
       setCertificates(data)
     })
     .catch(error => console.error('Error fetching data:', error))
+    
+    fetch('/server', {
+      method: 'POST',
+      body: JSON.stringify({
+        name: "John Doe",
+        email: "john.doe@example.com",
+      })
+    })
+    .then((res) => res.json())
+    .then((data) => {
+      console.log('recieved data',data)
+    })
+    .catch(error => console.error('Error posting data:', error))
   }, [])
   
   return (
