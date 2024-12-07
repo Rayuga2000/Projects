@@ -11,7 +11,7 @@
 
 - **Languages**: Python, C, C++, Java, HTML, CSS, JavaScript
 - **Frameworks & Tools**: PyTorch, OpenCV, React.js, Tailwind CSS, Git, Github, Sass, Tailwind CSS, BootStrap,
-- **Specialties**: Machine Learning, Deep Learning, Testing & Debugging, Code Optimization
+- **Specialties**: Machine Learning, Deep Learning, Frontend Web Development
 
 📫 Let’s connect!  
 🔗 [LinkedIn](www.linkedin.com/in/tushar-sarkar-0a99b9219)  
