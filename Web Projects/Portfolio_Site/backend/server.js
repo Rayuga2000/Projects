@@ -1,8 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import express from 'express';
-import nodemailer from 'nodemailer'
-import { send } from 'vite';
+// import nodemailer from 'nodemailer'
 
 const app = express();
 const port = 3000;

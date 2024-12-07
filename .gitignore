@@ -1,3 +1,4 @@
 *.weight
 .env
 mail_client_secret.json
+credentials.json
